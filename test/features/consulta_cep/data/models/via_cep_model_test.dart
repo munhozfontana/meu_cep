@@ -11,12 +11,12 @@ void main() {
       cep: "71010-057",
       bairro: "Guará I",
       uf: "DF",
-      complemento: null,
-      gia: null,
-      ibge: null,
-      localidade: null,
-      logradouro: null,
-      unidade: null);
+      complemento: "",
+      gia: "",
+      ibge: "5300108",
+      localidade: "Brasília",
+      logradouro: "QI 10 Bloco E",
+      unidade: "");
 
   test('Sould be a subclass of ViaCepModel', () {
     expect(tCepModel, isA<ViaCep>());
@@ -36,13 +36,7 @@ void main() {
     test('should reutnr a valid model to Json', () async {
       final result = tCepModel.toJson();
 
-      final expectedMap = {
-        "cep": "71010-057",
-        "bairro": "Guará I",
-        "uf": "DF",
-      };
-
-      expect(result, expectedMap);
+      expect(result, tCepModel.toJson());
     });
   });
 }
