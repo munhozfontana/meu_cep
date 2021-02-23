@@ -36,7 +36,7 @@ void main() {
 
       verify(
         mockHttpClient.get(
-          'https://viacep.com.br/ws/$tCep/json/',
+          Uri(host: 'viacep.com.br', path: '/ws/$tCep/json/'),
           headers: {'Content-Type': 'application/json'},
         ),
       );

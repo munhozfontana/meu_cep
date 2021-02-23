@@ -11,7 +11,7 @@ main() {
 
   setUp(() {
     mockDataConnectionChecker = MockDataConnectionChecker();
-    networkInfoImpl = NetworkInfoImpl(mockDataConnectionChecker);
+    networkInfoImpl = NetworkInfoImpl();
   });
 
   group('isConnected', () {

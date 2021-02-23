@@ -22,4 +22,19 @@ class ViaCep extends Equatable {
       @required this.unidade,
       @required this.ibge,
       @required this.gia});
+
+  @override
+  List<Object> get props {
+    return [
+      cep,
+      logradouro,
+      complemento,
+      bairro,
+      localidade,
+      uf,
+      unidade,
+      ibge,
+      gia,
+    ];
+  }
 }

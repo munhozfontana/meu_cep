@@ -19,5 +19,8 @@ class GetViaCep implements UseCase<ViaCep, Params> {
 class Params extends Equatable {
   final String cep;
 
-  Params({@required this.cep}) : super([cep]);
+  Params({@required this.cep});
+
+  @override
+  List<Object> get props => [cep];
 }

@@ -9,7 +9,7 @@ class ViaCep extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
+      // resizeToAvoidBottomPadding: false,
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
       ),
@@ -39,7 +39,7 @@ class ViaCep extends StatelessWidget {
                 ),
                 Container(
                   height: MediaQuery.of(context).size.height * .4,
-                  width: MediaQuery.of(context).size.width,
+                  width: MediaQuery.of(context).size.width * .6,
                   child: Column(
                     children: <Widget>[
                       TextField(
